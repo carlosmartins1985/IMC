@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --primary-color: rgb(17, 86, 102); 
+    --primary-color-darker: rgb(9, 48, 56); 
+    --primary-color-result: rgb(40, 73, 30);
+    --primary-color-result-erro: rgb(73, 4, 4);
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 640px; /* Tamanho máximo */
+    margin: 50px auto; /* Alinha o container no meio da tela, e adiciona uma margem de 50px top e botton.*/
+    background-color: #fff; /* Cor de fundo do container*/
+    padding: 20px; /* Espaçamento interno*/
+    border-radius: 10px;
+}
+
+.tabela{
+    /* background-color: blue; */
+    width: 100%;
+    border-collapse: collapse;
+    /* padding: 0 20px; */
+}
+
+.tabela th {
+    /* color: red; */
+    text-align: left;
+}
+
+/* tr:nth-child(even){
+    background-color: #ecdddd;
+}
+tr:hover{
+    background-color: #b3b5bd;
+} */
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px; /* Espaço entre os elementos*/
+}
+
+form input {
+    font-size: 24px;
+    border-radius: 10px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+/*Efeito na borda do input*/
+form input:focus{
+    outline: 1px solid var(--primary-color);
+}
+
+form button {
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form button:hover {
+    background-color: var(--primary-color-darker);
+}
+
+.resultadoOk{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--primary-color-result);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.erro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--primary-color-result-erro);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
